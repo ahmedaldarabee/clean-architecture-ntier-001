@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ahmed\\source\\repos\\ADO\\NTierArchitecture\\CleanArchitecture\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE217EA9-61D7-929E-4110-B70A5E4BFFB0}|ContactsBussinessLayer\\ContactsBussinessLayer.csproj|c:\\users\\ahmed\\source\\repos\\ado\\ntierarchitecture\\cleanarchitecture\\contactsbussinesslayer\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE217EA9-61D7-929E-4110-B70A5E4BFFB0}|ContactsBussinessLayer\\ContactsBussinessLayer.csproj|solutionrelative:contactsbussinesslayer\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83DE259A-9A77-462C-86A4-2122C518B870}|Logging\\Logging.csproj|c:\\users\\ahmed\\source\\repos\\ado\\ntierarchitecture\\cleanarchitecture\\logging\\nloglogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83DE259A-9A77-462C-86A4-2122C518B870}|Logging\\Logging.csproj|solutionrelative:logging\\nloglogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67A8FB2D-213F-455F-94DD-960A97DD5907}|ContactsPresentationLayer\\ContactsPresentationLayer.csproj|c:\\users\\ahmed\\source\\repos\\ado\\ntierarchitecture\\cleanarchitecture\\contactspresentationlayer\\contactpresentation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67A8FB2D-213F-455F-94DD-960A97DD5907}|ContactsPresentationLayer\\ContactsPresentationLayer.csproj|solutionrelative:contactspresentationlayer\\contactpresentation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 211,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NLogLogger.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\ADO\\NTierArchitecture\\CleanArchitecture\\Logging\\NLogLogger.cs",
+              "RelativeDocumentMoniker": "Logging\\NLogLogger.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\ADO\\NTierArchitecture\\CleanArchitecture\\Logging\\NLogLogger.cs",
+              "RelativeToolTip": "Logging\\NLogLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-26T15:19:33.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\ADO\\NTierArchitecture\\CleanArchitecture\\ContactsBussinessLayer\\Contact.cs",
+              "RelativeDocumentMoniker": "ContactsBussinessLayer\\Contact.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\ADO\\NTierArchitecture\\CleanArchitecture\\ContactsBussinessLayer\\Contact.cs",
+              "RelativeToolTip": "ContactsBussinessLayer\\Contact.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA4wAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-25T14:09:39.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactPresentation.cs",
+              "DocumentMoniker": "C:\\Users\\ahmed\\source\\repos\\ADO\\NTierArchitecture\\CleanArchitecture\\ContactsPresentationLayer\\ContactPresentation.cs",
+              "RelativeDocumentMoniker": "ContactsPresentationLayer\\ContactPresentation.cs",
+              "ToolTip": "C:\\Users\\ahmed\\source\\repos\\ADO\\NTierArchitecture\\CleanArchitecture\\ContactsPresentationLayer\\ContactPresentation.cs",
+              "RelativeToolTip": "ContactsPresentationLayer\\ContactPresentation.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAcwCYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-19T15:31:29.075Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
