@@ -1,0 +1,15 @@
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\obj\Debug\net8.0\ContactsBussinessLayer.csproj.AssemblyReference.cache
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\obj\Debug\net8.0\ContactsBussinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\obj\Debug\net8.0\ContactsBussinessLayer.AssemblyInfoInputs.cache
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\obj\Debug\net8.0\ContactsBussinessLayer.AssemblyInfo.cs
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\obj\Debug\net8.0\ContactsBussinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\bin\Debug\net8.0\ContactsBussinessLayer.deps.json
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\bin\Debug\net8.0\ContactsBussinessLayer.dll
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\bin\Debug\net8.0\ContactsBussinessLayer.pdb
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\bin\Debug\net8.0\ContactsDataAccessLayer.dll
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\bin\Debug\net8.0\ContactsDataAccessLayer.pdb
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\obj\Debug\net8.0\Contacts.F7E32F19.Up2Date
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\obj\Debug\net8.0\ContactsBussinessLayer.dll
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\obj\Debug\net8.0\refint\ContactsBussinessLayer.dll
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\obj\Debug\net8.0\ContactsBussinessLayer.pdb
+C:\Users\ahmed\source\repos\ADO\NTierArchitecture\CleanArchitecture\ContactsBussinessLayer\obj\Debug\net8.0\ref\ContactsBussinessLayer.dll

@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/Bussiness Layer/">
+    <Project Path="ContactsBussinessLayer/ContactsBussinessLayer.csproj" />
+  </Folder>
+  <Folder Name="/Data Access Layer/">
+    <Project Path="ContactsDataAccessLayer/ContactsDataAccessLayer.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="Logging/Logging.csproj" Id="83de259a-9a77-462c-86a4-2122c518b870" />
+  </Folder>
+  <Folder Name="/Presentation Layer/">
+    <Project Path="ContactsPresentationLayer/ContactsPresentationLayer.csproj" />
+  </Folder>
+</Solution>

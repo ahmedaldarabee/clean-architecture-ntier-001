@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ContactsPresentationLayer": {
+      "commandName": "Project",
+      "sqlDebugging": true
+    }
+  }
+}
