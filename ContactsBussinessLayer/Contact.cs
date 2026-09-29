@@ -4,7 +4,6 @@ using Logging;
 
 namespace ContactsBussinessLayer {
     public class Contact {
-        private readonly NLogLogger _logger = new NLogLogger();
 
         public int ContactID { get; set; }
         public string? FirstName { get; set; }
@@ -47,13 +46,25 @@ namespace ContactsBussinessLayer {
                 return new Contact(ContactID,FirstName,LastName,Email,Phone,Address,CountryID);
             }
             else{
-                return null;
+                return null!;
             }
         }
         
         public bool Saving(){
-            this.ContactID = ContactData.SavingContact(this.FirstName, this.LastName, this.Email, this.Phone, this.Address, this.CountryID);
+            this.ContactID = ContactData.SavingContact(this.FirstName!, this.LastName!, this.Email!, this.Phone!, this.Address!, this.CountryID);
             return this.ContactID != -1;
+        }
+
+        public bool Updating() {
+            return ContactData.UpdateContact(this.ContactID,this.Phone!) != false;
+        }
+
+        public bool IsExist(int ContactID){
+            return ContactData.FindByID(ContactID) != false;
+        }
+
+        public bool Deleting(int ContactID){
+            return ContactData.DeleteById(ContactID) != false;
         }
 
     }

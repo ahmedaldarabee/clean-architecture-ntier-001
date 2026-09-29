@@ -30,8 +30,42 @@ namespace ContactsPresentationLayer {
                     "Opps, somthing went error!");
         }
 
+        public static void updateByID(int contactID){
+            Contact contact = new Contact();
+
+            if (contact.IsExist(contactID)) {
+
+                contact.ContactID = contactID;
+                contact.Phone = "+962-788856669";
+                Console.WriteLine(contact.Updating() ?
+                        $"Needed row updated successdully for id: {contact.ContactID}" :
+                        "Opps, somthing went error!");
+            }
+            else {
+                Console.WriteLine("Opps, this user not exist!");
+            }
+        }
+
+        public static void deleteContact(int contactID){
+            Contact contact = new Contact();
+
+            Console.WriteLine("sender id: {0}", contactID);
+            if (contact.IsExist(contactID)){
+                if (contact.Deleting(contactID)){
+                    Console.WriteLine("user deleted successfully");
+                }
+                else {
+                    Console.WriteLine("Sorry, somethink went error !");
+                }
+            }
+            else{
+                Console.WriteLine("Opps, this user not exist!");
+            }
+        }
+
+
         public static void Main(string[] args) {
-            AddNewContact();
+            deleteContact(12);
         }
     }
 }
