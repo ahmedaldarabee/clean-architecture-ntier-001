@@ -1,5 +1,6 @@
 ﻿
 using ContactsBussinessLayer;
+using Microsoft.Data.SqlClient;
 using System.Data;
 
 namespace ContactsPresentationLayer {
@@ -32,7 +33,7 @@ namespace ContactsPresentationLayer {
                     "Opps, somthing went error!");
         }
 
-        public static void updateByID(int contactID){
+        public static void UpdateByID(int contactID){
             Contact contact = new Contact();
 
             if (contact.IsExist(contactID)) {
@@ -48,7 +49,7 @@ namespace ContactsPresentationLayer {
             }
         }
 
-        public static void deleteContact(int contactID){
+        public static void DeleteContact(int contactID){
             Contact contact = new Contact();
 
             Console.WriteLine("sender id: {0}", contactID);
@@ -65,8 +66,8 @@ namespace ContactsPresentationLayer {
             }
         }
 
-        public static void employeeDataTable(){
-            DataTable employeeInfo = new DataTable();
+        public static void EmployeeDataTable(){
+            DataTable employeeInfo = new DataTable("employeeInfo");
             try {
                 //Table Defining
                 employeeInfo.Columns.Add("ID", typeof(int));
@@ -124,11 +125,14 @@ namespace ContactsPresentationLayer {
 
                 DoSorting(employeeInfo, "ASC");
                 EmployeeDataView(employeeInfo, "Data after updation");
+
+                ShowDataSet(employeeInfo);
             }
             catch (Exception ex){
                 Console.WriteLine("Error be as: {0}", ex.Message);
             }
         }
+        
         //Best way to show/view data
         public static void EmployeeDataView(DataTable employees,string title){
             Console.WriteLine($"\n\n{title}");
@@ -171,8 +175,79 @@ namespace ContactsPresentationLayer {
             employeeInfo = employeeInfo.DefaultView.ToTable();
         }
 
+        public static void DepartmentDataTable(){
+            DataTable departmentTable = new DataTable("departmentTable");
+            departmentTable.Columns.Add("DepartmentID",typeof(int));
+            departmentTable.Columns.Add("DepartmentName", typeof(string));
+
+
+            departmentTable.Rows.Add(1,"Engineering");
+            departmentTable.Rows.Add(2, "Marketing");
+            departmentTable.Rows.Add(3, "Humman Resources");
+
+            DepartmentDataView(departmentTable);
+            //ShowDataSet(departmentTable);
+
+        }
+
+        public static void DepartmentDataView(DataTable info){
+            DataView rows = info.DefaultView;
+            for (int i = 0; i < rows.Count; i++ ){
+                Console.WriteLine("Id: {0}\tDepartment Name: {1}",rows[i][0], rows[i][1]);
+            }
+        }
+
+        public static void ShowDataSet(DataTable? employees){
+            //DataTable? department
+            Console.WriteLine("\n\nData Set Tables Info\n");
+            DataSet sets = new DataSet();
+            sets.Tables.Add(employees!);
+            //sets.Tables.Add(department!);
+
+            DataView employeeViews = sets.Tables["employeeInfo"]?.DefaultView!;
+
+            for (int i =0 ; i < employees?.Rows.Count; i++){
+                Console.WriteLine("{0}\t{1}\t{2}\t{3}\t{4}",
+                        employeeViews[i][0], employeeViews[i][1],
+                        employeeViews[i][2], employeeViews[i][3],employeeViews[i][4]
+                );
+            }
+
+            //DataView departmentsViews = department?.DefaultView!;
+            //for (int i = 0; i < departmentsViews.Count; i++) {
+            //    Console.WriteLine("Id: {0}\tDepartment Name: {1}", departmentsViews[i][0], departmentsViews[i][1]);
+            //}
+        }
+
+        public static void DataAdapterHandler(){
+            string connectionSQLString = "Server=.;Database=ContactsDB;Integrated Security=True;TrustServerCertificate=True;"??"";
+            SqlConnection connection = new SqlConnection(connectionSQLString);
+
+            string query = "select * from Contacts"??"";
+
+            try{
+                connection.Open();
+
+                DataSet dataSets = new DataSet();
+                SqlDataAdapter adapter = new SqlDataAdapter(query,connection);
+                adapter.SelectCommand.Connection = connection;
+
+                adapter.Fill(dataSets, "Contacts");
+                connection.Close();
+
+                foreach(DataRow info in dataSets.Tables["Contacts"]!.Rows){
+                    Console.WriteLine("ID: {0}\tFirstName: {1}\tLastName: {2}\tEmail: {3}", 
+                        info["ContactID"], info["FirstName"], info["LastName"], info["Email"]);
+                }
+
+            }
+            catch (Exception ex){
+                Console.WriteLine(ex.Message);
+            }
+        }
+
         public static void Main(string[] args) {
-            employeeDataTable();
+            DataAdapterHandler();
         }
     }
 }
